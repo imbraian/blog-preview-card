@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Figtree", serif, sans-serif;
+  background: hsl(47, 88%, 63%);
+  display: flex;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.card__container {
+  max-width: 280px;
+  border-radius: 20px;
+  background: hsl(0, 0%, 100%);
+  padding: 15px;
+  border: 1px solid;
+  box-shadow: 10px 10px;
+  transition: .3s;
+  .card__container--img img {
+    width: 100%;
+    border-radius: 20px;
+    height: 100%;
+  }
+}
+
+.card__date {
+  .card__date--title {
+    display: inline-flex;
+    background: hsl(47, 88%, 63%);
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 11px;
+    margin-top: 15px;
+    cursor: pointer;
+  }
+  .card__date--desc {
+    margin: 10px 0;
+    font-size: 10px;
+    font-weight: 500;
+  }
+}
+
+.card__info {
+  .card__info--title {
+    font-size: 17px;
+    font-weight: 800;
+    transition: .3s;
+    &:hover {
+      color: hsl(47, 88%, 63%);
+      cursor: pointer;
+    }
+  }
+  .card__info--desc {
+    margin: 10px 0;
+    font-size: 12px;
+    color: hsl(0, 0%, 50%);
+    line-height: 1.6;
+  }
+}
+
+.card__profile {
+  display: flex;
+  align-items: center;
+  font-weight: 800;
+  gap: 14px;
+  margin: 20px 0 5px;
+  .card__profile--name {
+    font-size: 12px;
+    &:hover {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+  .card__profile--img img {
+    width: 30px;
+  }
+}
